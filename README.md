@@ -34,7 +34,7 @@ Usually, a scalable system includes webserver (load balancer), service (service 
 **Component design**
 
 For each component, you need to write the specific APIs for each component. You may need to finish
-the detailed OOD design for a particular function. You may also need to design the database schema for the database.
+the detailed OOD for a particular function. You may also need to design the database schema for the database.
 
 ###[[⬆]](#toc) <a name='intro'>Basic Knowledge about System Design:</a>
 
