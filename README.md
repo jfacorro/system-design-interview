@@ -5,7 +5,7 @@
 System design is a very broad topic. Even a software engineer with many years of working experience at top IT company may not be an expert
 on system design. If you want to become an expert, you need to read many books, articles, and solve real large scale system design problems.
 
-This repository only teaches you to handle the system design interview with a systematic approach in a short time. 
+This repository only teaches you to handle the system design interview with a systematic approach in a short time.
 You can dive into each topic if you have time. Of course, welcome to add your thoughts!
 
 ## <a name='toc'>Table of Contents</a>
@@ -21,16 +21,16 @@ You can dive into each topic if you have time. Of course, welcome to add your th
 **Clarify the constraints and identify the user cases**
 
 Spend a few minutes questioning the interviewer and agreeing on the scope of the system.
-Remember to make sure you know all the requirements the interviewer didn't tell your about in the beginning.
+Remember to make sure you know all the requirements the interviewer didn't tell you about in the beginning.
 
-User cases indicate the main functions of the system, and constraints list the scale of the system such as requests 
+User cases indicate the main functions of the system, and constraints list the scale of the system such as requests
 per second, requests types, data written per second, data read per second.
 
 **High-level architecture design**
 
-Sketch the important components and the connections between them, but don't go into some details. 
+Sketch the important components and the connections between them, but don't go into some details.
 Usually, a scalable system includes webserver (load balancer), service (service partition), database (master/slave database cluster plug cache).
- 
+
 **Component design**
 
 For each component, you need to write the specific APIs for each component. You may need to finish
@@ -38,7 +38,7 @@ the detailed OOD design for a particular function. You may also need to design t
 
 ###[[⬆]](#toc) <a name='intro'>Basic Knowledge about System Design:</a>
 
-Here are some articles about system design related topics.  
+Here are some articles about system design related topics.
 
 * [How to Rock a Systems Design Interview](http://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/)
 * [System Interview](http://www.hiredintech.com/app#system-design)
@@ -60,7 +60,7 @@ a good collection of material about [distributed systems](http://dancres.github.
 
 ###[[⬆]](#toc) <a name='blog'>Company Engineering Blogs:</a>
 
-If you are going to have an onsite with a company, you should read their engineering blog. 
+If you are going to have an onsite with a company, you should read their engineering blog.
 
 * [High Scalability](http://highscalability.com/)
 * [The GitHub Blog](https://github.com/blog/category/engineering)
@@ -96,7 +96,7 @@ If you are going to have an onsite with a company, you should read their enginee
 
 ###[[⬆]](#toc) <a name='system'>Products and Systems:</a>
 
-The following papers/articles/slides can help you to understand the general design idea of different real products and systems. 
+The following papers/articles/slides can help you to understand the general design idea of different real products and systems.
 
 * [MapReduce: Simplied Data Processing on Large Clusters](http://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/mapreduce-osdi04.pdf)
 * [Bigtable: A Distributed Storage System for Structured Data](http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/chang06bigtable.pdf)
@@ -131,97 +131,97 @@ The following papers/articles/slides can help you to understand the general desi
 
 ###[[⬆]](#toc) <a name='qs'>Hot Questions and Reference:</a>
 
-There are some good references for each question. The references here are slides and articles. 
+There are some good references for each question. The references here are slides and articles.
 
-**Design a CDN network**  
-Reference:  
+**Design a CDN network**
+Reference:
 * [Globally Distributed Content Delivery](http://repository.cmu.edu/cgi/viewcontent.cgi?article=2112&context=compsci).
 
-**Design a Google document system**  
-Reference:  
+**Design a Google document system**
+Reference:
 * [google-mobwrite](https://code.google.com/p/google-mobwrite/)
 * [Differential Synchronization](https://neil.fraser.name/writing/sync/).
 
-**Design a random ID generation system**  
-Reference: 
-* [Announcing Snowflake](https://blog.twitter.com/2010/announcing-snowflake) 
+**Design a random ID generation system**
+Reference:
+* [Announcing Snowflake](https://blog.twitter.com/2010/announcing-snowflake)
 * [snowflake](https://github.com/twitter/snowflake/).
 
-**Design a key-value database**  
-Reference:   
+**Design a key-value database**
+Reference:
 * [Introduction to Redis](http://www.slideshare.net/dvirsky/introduction-to-redis).
 
-**Design the Facebook news seed function**   
-Reference:   
-* [What are best practices for building something like a News Feed?](http://www.quora.com/What-are-best-practices-for-building-something-like-a-News-Feed) 
-* [What are the scaling issues to keep in mind while developing a social network feed?](http://www.quora.com/Activity-Streams/What-are-the-scaling-issues-to-keep-in-mind-while-developing-a-social-network-feed) 
+**Design the Facebook news seed function**
+Reference:
+* [What are best practices for building something like a News Feed?](http://www.quora.com/What-are-best-practices-for-building-something-like-a-News-Feed)
+* [What are the scaling issues to keep in mind while developing a social network feed?](http://www.quora.com/Activity-Streams/What-are-the-scaling-issues-to-keep-in-mind-while-developing-a-social-network-feed)
 * [Activity Feeds Architecture](http://www.slideshare.net/danmckinley/etsy-activity-feeds-architecture)
 
-**Design the Facebook timeline function**   
-Reference: 
-* [Building Timeline](https://www.facebook.com/note.php?note_id=10150468255628920) 
+**Design the Facebook timeline function**
+Reference:
+* [Building Timeline](https://www.facebook.com/note.php?note_id=10150468255628920)
 * [Facebook Timeline](http://highscalability.com/blog/2012/1/23/facebook-timeline-brought-to-you-by-the-power-of-denormaliza.html).
 
-**Design a function to return the top k requests during past time interval**   
-Reference:  
+**Design a function to return the top k requests during past time interval**
+Reference:
 * [Efficient Computation of Frequent and Top-k Elements in Data Streams](https://icmi.cs.ucsb.edu/research/tech_reports/reports/2005-23.pdf)
 * [An Optimal Strategy for Monitoring Top-k Queries in Streaming Windows](http://davis.wpi.edu/xmdv/docs/EDBT11-diyang.pdf)
 
-**Design an online multiplayer card game**   
-Reference:  
-* [How to Create an Asynchronous Multiplayer Game](http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html)   
-* [How to Create an Asynchronous Multiplayer Game Part 2: Saving the Game State to Online Database](http://www.indieflashblog.com/how-to-create-async-part2.html)  
-* [How to Create an Asynchronous Multiplayer Game Part 3: Loading Games from the Database](http://www.indieflashblog.com/how-to-create-async-part3.html)  
-* [How to Create an Asynchronous Multiplayer Game Part 4: Matchmaking](http://www.indieflashblog.com/how-to-create-async-part4-html.html#comment-4447)  
-* [Real Time Multiplayer in HTML5](http://buildnewgames.com/real-time-multiplayer/)  
+**Design an online multiplayer card game**
+Reference:
+* [How to Create an Asynchronous Multiplayer Game](http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html)
+* [How to Create an Asynchronous Multiplayer Game Part 2: Saving the Game State to Online Database](http://www.indieflashblog.com/how-to-create-async-part2.html)
+* [How to Create an Asynchronous Multiplayer Game Part 3: Loading Games from the Database](http://www.indieflashblog.com/how-to-create-async-part3.html)
+* [How to Create an Asynchronous Multiplayer Game Part 4: Matchmaking](http://www.indieflashblog.com/how-to-create-async-part4-html.html#comment-4447)
+* [Real Time Multiplayer in HTML5](http://buildnewgames.com/real-time-multiplayer/)
 
-**Design a graph search function**   
-Reference:   
+**Design a graph search function**
+Reference:
 * [Building out the infrastructure for Graph Search](https://www.facebook.com/notes/facebook-engineering/under-the-hood-building-out-the-infrastructure-for-graph-search/10151347573598920)
-* [Indexing and ranking in Graph Search](https://www.facebook.com/notes/facebook-engineering/under-the-hood-indexing-and-ranking-in-graph-search/10151361720763920) 
+* [Indexing and ranking in Graph Search](https://www.facebook.com/notes/facebook-engineering/under-the-hood-indexing-and-ranking-in-graph-search/10151361720763920)
 * [The natural language interface of Graph Search](https://www.facebook.com/notes/facebook-engineering/under-the-hood-the-natural-language-interface-of-graph-search/10151432733048920) and [Erlang at Facebook](http://www.erlang-factory.com/upload/presentations/31/EugeneLetuchy-ErlangatFacebook.pdf).
 
-**Design a picture sharing system**   
-Reference:   
-* [Flickr Architecture](http://highscalability.com/flickr-architecture) 
-* [Instagram Architecture](http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html). 
+**Design a picture sharing system**
+Reference:
+* [Flickr Architecture](http://highscalability.com/flickr-architecture)
+* [Instagram Architecture](http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html).
 
-**Design a search engine**   
-Reference:  
-* [How would you implement Google Search?](http://programmers.stackexchange.com/questions/38324/interview-question-how-would-you-implement-google-search)  
+**Design a search engine**
+Reference:
+* [How would you implement Google Search?](http://programmers.stackexchange.com/questions/38324/interview-question-how-would-you-implement-google-search)
 * [Implementing Search Engines](http://www.ardendertat.com/2012/01/11/implementing-search-engines/)
 
-**Design a recommendition system**  
-Reference:  
-* [Hulu’s Recommendation System](http://tech.hulu.com/blog/2011/09/19/recommendation-system/)  
+**Design a recommendition system**
+Reference:
+* [Hulu’s Recommendation System](http://tech.hulu.com/blog/2011/09/19/recommendation-system/)
 * [Recommender Systems](http://ijcai13.org/files/tutorial_slides/td3.pdf)
 
-**Design a tinyurl system**    
-Reference: 
-* [System Design for Big Data-tinyurl](http://n00tc0d3r.blogspot.com/) 
+**Design a tinyurl system**
+Reference:
+* [System Design for Big Data-tinyurl](http://n00tc0d3r.blogspot.com/)
 * [URL Shortener API](https://developers.google.com/url-shortener/?csw=1).
 
-**Design a garbage collection system**    
-Reference:   
+**Design a garbage collection system**
+Reference:
 * [Baby's First Garbage Collector](http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/).
- 
-**Design a scalable web crawling system**    
-Reference:  
+
+**Design a scalable web crawling system**
+Reference:
 * [Design and Implementation of a High-Performance Distributed Web Crawler](http://cis.poly.edu/suel/papers/crawl.pdf)
 
-**Design the Facebook chat function**    
-Reference:   
-* [Erlang at Facebook](http://www.erlang-factory.com/upload/presentations/31/EugeneLetuchy-ErlangatFacebook.pdf)  
+**Design the Facebook chat function**
+Reference:
+* [Erlang at Facebook](http://www.erlang-factory.com/upload/presentations/31/EugeneLetuchy-ErlangatFacebook.pdf)
 * [Facebook Chat](https://www.facebook.com/note.php?note_id=14218138919&id=9445547199&index=0)
 
-**Design a trending topic system**    
-Reference:  
-* [Implementing Real-Time Trending Topics With a Distributed Rolling Count Algorithm in Storm](http://www.michael-noll.com/blog/2013/01/18/implementing-real-time-trending-topics-in-storm/)   
+**Design a trending topic system**
+Reference:
+* [Implementing Real-Time Trending Topics With a Distributed Rolling Count Algorithm in Storm](http://www.michael-noll.com/blog/2013/01/18/implementing-real-time-trending-topics-in-storm/)
 * [Early detection of Twitter trends explained](http://snikolov.wordpress.com/2012/11/14/early-detection-of-twitter-trends/)
- 
-**Design a cache system**    
-Reference:   
-* [Introduction to Memcached](http://www.slideshare.net/oemebamo/introduction-to-memcached). 
+
+**Design a cache system**
+Reference:
+* [Introduction to Memcached](http://www.slideshare.net/oemebamo/introduction-to-memcached).
 
 ###[[⬆]](#toc) <a name='ood'>Object Oriented Design:</a>
 
@@ -246,7 +246,3 @@ Use design patterns such that it can be reused in multiple applications.
 ####Useful Websites
 
 * [101 Design Patterns & Tips for Developers](http://sourcemaking.com/design-patterns-and-tips)
-
-
-
-
